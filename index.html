@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Professional Expressions Guide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+        .container {
+            max-width: 900px;
+            padding: 2rem;
+        }
+        .section {
+            background-color: #ffffff;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.02);
+            border: 1px solid #e2e8f0;
+        }
+        .expression-card {
+            border-left: 4px solid #3b82f6;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .expression-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .interactive-card {
+            border: 1px solid #cbd5e1;
+            background-color: #f1f5f9;
+        }
+        .drag-item {
+            cursor: grab;
+        }
+        .drag-item.dragging {
+            opacity: 0.5;
+        }
+        .drop-target {
+            border: 2px dashed #94a3b8;
+        }
+        .drop-target.hovered {
+            border-color: #3b82f6;
+            background-color: #e0f2fe;
+        }
+        .correct {
+            background-color: #dcfce7;
+            border-color: #22c55e;
+        }
+        .incorrect {
+            background-color: #fee2e2;
+            border-color: #ef4444;
+        }
+        .message-box {
+            position: fixed;
+            top: 2rem;
+            right: 2rem;
+            padding: 1rem 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            display: none;
+            font-weight: 500;
+        }
+        .message-box.correct {
+            background-color: #dcfce7;
+            color: #166534;
+        }
+        .message-box.incorrect {
+            background-color: #fee2e2;
+            color: #991b1b;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <div class="message-box" id="message-box"></div>
+
+    <div class="container mx-auto">
+        <header class="text-center py-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">Advanced Professional Expressions Guide</h1>
+            <p class="mt-4 text-lg md:text-xl text-gray-600 font-light">Elevate your corporate vocabulary with high-impact phrases for effective communication.</p>
+        </header>
+
+        <main class="space-y-12">
+
+            <!-- Core Meeting Phrases Section -->
+            <section class="section">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">Core Meeting Phrases</h2>
+                <p class="text-gray-600 mb-8">These expressions are essential for navigating common meeting situations, from opening a discussion to wrapping up.</p>
+                
+                <!-- Phrase 1: To leverage -->
+                <div class="expression-card p-6 mb-6 bg-white rounded-lg shadow-sm border-l-4 border-blue-500">
+                    <p class="text-lg font-semibold text-blue-700">1. To leverage</p>
+                    <p class="text-sm text-gray-500 italic mb-2">Literal meaning: To use a lever</p>
+                    <p class="mt-2"><strong>Scenario:</strong> You are discussing how to make the most of an existing resource, such as a team's expertise or a new software tool.</p>
+                    <p class="mt-2 text-blue-900"><strong>Example:</strong> "We should **leverage** Sarah’s experience in data analytics for this new project."</p>
+                    <p class="mt-2 text-sm text-gray-600"><strong>🇧🇷 Brazilian Portuguese:</strong> "Para alavancar" ou "Para usar a seu favor"</p>
+                </div>
+                
+                <!-- Phrase 2: To streamline -->
+                <div class="expression-card p-6 mb-6 bg-white rounded-lg shadow-sm border-l-4 border-blue-500">
+                    <p class="text-lg font-semibold text-blue-700">2. To streamline</p>
+                    <p class="text-sm text-gray-500 italic mb-2">Literal meaning: To make something flow in a continuous line</p>
+                    <p class="mt-2"><strong>Scenario:</strong> The team is working on an inefficient process and you want to propose a way to make it faster and more effective.</p>
+                    <p class="mt-2 text-blue-900"><strong>Example:</strong> "We need to **streamline** the reporting process to save time for everyone."</p>
+                    <p class="mt-2 text-sm text-gray-600"><strong>🇧🇷 Brazilian Portuguese:</strong> "Para otimizar" ou "Para simplificar"</p>
+                </div>
+                
+                <!-- Phrase 3: Low-hanging fruit -->
+                <div class="expression-card p-6 mb-6 bg-white rounded-lg shadow-sm border-l-4 border-blue-500">
+                    <p class="text-lg font-semibold text-blue-700">3. Low-hanging fruit</p>
+                    <p class="text-sm text-gray-500 italic mb-2">Literal meaning: Fruit that is easy to pick from a tree</p>
+                    <p class="mt-2"><strong>Scenario:</strong> You are brainstorming tasks and want to identify the easiest ones to complete quickly to build momentum.</p>
+                    <p class="mt-2 text-blue-900"><strong>Example:</strong> "Let's focus on the **low-hanging fruit** first to show some quick wins."</p>
+                    <p class="mt-2 text-sm text-gray-600"><strong>🇧🇷 Brazilian Portuguese:</strong> "O mais fácil de alcançar" ou "O que dá menos trabalho"</p>
+                </div>
+
+                <!-- Phrase 4: To ping me -->
+                <div class="expression-card p-6 mb-6 bg-white rounded-lg shadow-sm border-l-4 border-blue-500">
+                    <p class="text-lg font-semibold text-blue-700">4. To ping me</p>
+                    <p class="text-sm text-gray-500 italic mb-2">Literal meaning: To send a quick sound (like a sonar ping)</p>
+                    <p class="mt-2"><strong>Scenario:</strong> You are ending a conversation and want to tell a colleague to contact you with a quick, informal message or call.</p>
+                    <p class="mt-2 text-blue-900"><strong>Example:</strong> "I'll send you the document later. Just **ping me** if you have any questions."</p>
+                    <p class="mt-2 text-sm text-gray-600"><strong>🇧🇷 Brazilian Portuguese:</strong> "Me mande uma mensagem" ou "Me avise"</p>
+                </div>
+
+                <!-- Phrase 5: A deep dive -->
+                <div class="expression-card p-6 mb-6 bg-white rounded-lg shadow-sm border-l-4 border-blue-500">
+                    <p class="text-lg font-semibold text-blue-700">5. A deep dive</p>
+                    <p class="text-sm text-gray-500 italic mb-2">Literal meaning: To dive far down into the water</p>
+                    <p class="mt-2"><strong>Scenario:</strong> The team needs to thoroughly analyze a complex topic, requiring extensive research and discussion.</p>
+                    <p class="mt-2 text-blue-900"><strong>Example:</strong> "We need to schedule a meeting for a **deep dive** into the market data."</p>
+                    <p class="mt-2 text-sm text-gray-600"><strong>🇧🇷 Brazilian Portuguese:</strong> "Uma análise detalhada" ou "Um mergulho profundo"</p>
+                </div>
+
+                <!-- Phrase 6: To circle back -->
+                <div class="expression-card p-6 mb-6 bg-white rounded-lg shadow-sm border-l-4 border-blue-500">
+                    <p class="text-lg font-semibold text-blue-700">6. To circle back</p>
+                    <p class="text-sm text-gray-500 italic mb-2">Literal meaning: To move in a circle and return to the starting point</p>
+                    <p class="mt-2"><strong>Scenario:</strong> You need to postpone a discussion to a later time to gather more information.</p>
+                    <p class="mt-2 text-blue-900"><strong>Example:</strong> "Let's **circle back** to this topic in our next meeting once we have all the data."</p>
+                    <p class="mt-2 text-sm text-gray-600"><strong>🇧🇷 Brazilian Portuguese:</strong> "Para voltar a um assunto" ou "Para retomar uma discussão"</p>
+                </div>
+                
+                <!-- Phrase 7: Core competency -->
+                <div class="expression-card p-6 mb-6 bg-white rounded-lg shadow-sm border-l-4 border-blue-500">
+                    <p class="text-lg font-semibold text-blue-700">7. Core competency</p>
+                    <p class="text-sm text-gray-500 italic mb-2">Literal meaning: The main skill of a person or company</p>
+                    <p class="mt-2"><strong>Scenario:</strong> You are describing the fundamental strength of a team or company.</p>
+                    <p class="mt-2 text-blue-900"><strong>Example:</strong> "Our **core competency** is our ability to deliver innovative software solutions quickly."</p>
+                    <p class="mt-2 text-sm text-gray-600"><strong>🇧🇷 Brazilian Portuguese:</strong> "Competência principal" ou "Especialidade"</p>
+                </div>
+
+                <!-- Phrase 8: On my radar -->
+                <div class="expression-card p-6 mb-6 bg-white rounded-lg shadow-sm border-l-4 border-blue-500">
+                    <p class="text-lg font-semibold text-blue-700">8. On my radar</p>
+                    <p class="text-sm text-gray-500 italic mb-2">Literal meaning: Detected by a radar system</p>
+                    <p class="mt-2"><strong>Scenario:</strong> You want to let a colleague know that you are aware of an issue or a task and are monitoring it.</p>
+                    <p class="mt-2 text-blue-900"><strong>Example:</strong> "I know that client feedback is an issue, it's definitely **on my radar**."</p>
+                    <p class="mt-2 text-sm text-gray-600"><strong>🇧🇷 Brazilian Portuguese:</strong> "No meu radar" ou "Sob meu controle"</p>
+                </div>
+
+                <!-- Phrase 9: A paradigm shift -->
+                <div class="expression-card p-6 mb-6 bg-white rounded-lg shadow-sm border-l-4 border-blue-500">
+                    <p class="text-lg font-semibold text-blue-700">9. A paradigm shift</p>
+                    <p class="text-sm text-gray-500 italic mb-2">Literal meaning: A fundamental change in a model or perspective</p>
+                    <p class="mt-2"><strong>Scenario:</strong> The company is moving from one core business model to a completely new one, requiring a major change in strategy and thinking.</p>
+                    <p class="mt-2 text-blue-900"><strong>Example:</strong> "The rise of AI has created a **paradigm shift** in the software industry."</p>
+                    <p class="mt-2 text-sm text-gray-600"><strong>🇧🇷 Brazilian Portuguese:</strong> "Uma mudança de paradigma" ou "Uma grande mudança de pensamento"</p>
+                </div>
+
+                <!-- Phrase 10: To put a pin in it -->
+                <div class="expression-card p-6 mb-6 bg-white rounded-lg shadow-sm border-l-4 border-blue-500">
+                    <p class="text-lg font-semibold text-blue-700">10. To put a pin in it</p>
+                    <p class="text-sm text-gray-500 italic mb-2">Literal meaning: To pin an item to a bulletin board</p>
+                    <p class="mt-2"><strong>Scenario:</strong> A discussion is getting off-topic, and you want to save the subject for later without interrupting the flow of the meeting.</p>
+                    <p class="mt-2 text-blue-900"><strong>Example:</strong> "That's a great point, but let's **put a pin in it** and come back to it later."</p>
+                    <p class="mt-2 text-sm text-gray-600"><strong>🇧🇷 Brazilian Portuguese:</strong> "Para adiar a discussão" ou "Para deixar para depois"</p>
+                </div>
+                
+                <!-- Phrase 11: In the pipeline -->
+                <div class="expression-card p-6 mb-6 bg-white rounded-lg shadow-sm border-l-4 border-blue-500">
+                    <p class="text-lg font-semibold text-blue-700">11. In the pipeline</p>
+                    <p class="text-sm text-gray-500 italic mb-2">Literal meaning: In a system of tubes</p>
+                    <p class="mt-2"><strong>Scenario:</strong> You are talking about a new project or product that is currently under development but not yet ready to be launched.</p>
+                    <p class="mt-2 text-blue-900"><strong>Example:</strong> "We have a few exciting new features **in the pipeline** for the next product update."</p>
+                    <p class="mt-2 text-sm text-gray-600"><strong>🇧🇷 Brazilian Portuguese:</strong> "Em andamento" ou "Em fase de desenvolvimento"</p>
+                </div>
+
+                <!-- Phrase 12: To get traction -->
+                <div class="expression-card p-6 mb-6 bg-white rounded-lg shadow-sm border-l-4 border-blue-500">
+                    <p class="text-lg font-semibold text-blue-700">12. To get traction</p>
+                    <p class="text-sm text-gray-500 italic mb-2">Literal meaning: To get a grip or a hold</p>
+                    <p class="mt-2"><strong>Scenario:</strong> You are evaluating whether a new idea or project is gaining momentum and receiving support from stakeholders.</p>
+                    <p class="mt-2 text-blue-900"><strong>Example:</strong> "The new marketing campaign is really starting to **get traction** with our target audience."</p>
+                    <p class="mt-2 text-sm text-gray-600"><strong>🇧🇷 Brazilian Portuguese:</strong> "Para ganhar força" ou "Para ter aprovação"</p>
+                </div>
+            </section>
+            
+            <!-- Interactive Exercises & Scenarios -->
+            <section class="section interactive-card">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">Interactive Exercises & Scenarios</h2>
+                <p class="text-gray-700 mb-8">Test your knowledge with these interactive exercises and practice scenarios!</p>
+
+                <!-- Translation Exercise -->
+                <div class="mb-10">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Translation Exercise (Portuguese to English)</h3>
+                    <p class="text-gray-700 mb-4">Translate these common Brazilian Portuguese phrases into their professional English equivalents. Think about what phrase would be a perfect fit in a corporate environment. Click "Check" to see if you are correct!</p>
+                    
+                    <div id="translation-list" class="space-y-4">
+                        <div class="bg-white p-4 rounded-md shadow-sm border border-gray-200 flex flex-col md:flex-row items-start md:items-center justify-between">
+                            <p class="text-gray-600 md:mb-0 mb-2"><strong>🇧🇷 Portuguese:</strong> Precisamos otimizar este processo.</p>
+                            <div class="flex items-center w-full md:w-auto">
+                                <input type="text" id="ans1" class="w-full md:w-64 border rounded-md px-3 py-2 focus:outline-none focus:ring focus:ring-blue-200">
+                                <button onclick="checkAnswer(1)" class="ml-2 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-200">Check</button>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 rounded-md shadow-sm border border-gray-200 flex flex-col md:flex-row items-start md:items-center justify-between">
+                            <p class="text-gray-600 md:mb-0 mb-2"><strong>🇧🇷 Portuguese:</strong> Vamos focar no que dá menos trabalho.</p>
+                            <div class="flex items-center w-full md:w-auto">
+                                <input type="text" id="ans2" class="w-full md:w-64 border rounded-md px-3 py-2 focus:outline-none focus:ring focus:ring-blue-200">
+                                <button onclick="checkAnswer(2)" class="ml-2 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-200">Check</button>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 rounded-md shadow-sm border border-gray-200 flex flex-col md:flex-row items-start md:items-center justify-between">
+                            <p class="text-gray-600 md:mb-0 mb-2"><strong>🇧🇷 Portuguese:</strong> Essa é uma competência principal nossa.</p>
+                            <div class="flex items-center w-full md:w-auto">
+                                <input type="text" id="ans3" class="w-full md:w-64 border rounded-md px-3 py-2 focus:outline-none focus:ring focus:ring-blue-200">
+                                <button onclick="checkAnswer(3)" class="ml-2 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-200">Check</button>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 rounded-md shadow-sm border border-gray-200 flex flex-col md:flex-row items-start md:items-center justify-between">
+                            <p class="text-gray-600 md:mb-0 mb-2"><strong>🇧🇷 Portuguese:</strong> O projeto está em andamento.</p>
+                            <div class="flex items-center w-full md:w-auto">
+                                <input type="text" id="ans4" class="w-full md:w-64 border rounded-md px-3 py-2 focus:outline-none focus:ring focus:ring-blue-200">
+                                <button onclick="checkAnswer(4)" class="ml-2 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-200">Check</button>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 rounded-md shadow-sm border border-gray-200 flex flex-col md:flex-row items-start md:items-center justify-between">
+                            <p class="text-gray-600 md:mb-0 mb-2"><strong>🇧🇷 Portuguese:</strong> A nova estratégia está ganhando força.</p>
+                            <div class="flex items-center w-full md:w-auto">
+                                <input type="text" id="ans5" class="w-full md:w-64 border rounded-md px-3 py-2 focus:outline-none focus:ring focus:ring-blue-200">
+                                <button onclick="checkAnswer(5)" class="ml-2 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-200">Check</button>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 rounded-md shadow-sm border border-gray-200 flex flex-col md:flex-row items-start md:items-center justify-between">
+                            <p class="text-gray-600 md:mb-0 mb-2"><strong>🇧🇷 Portuguese:</strong> Vamos adiar essa discussão.</p>
+                            <div class="flex items-center w-full md:w-auto">
+                                <input type="text" id="ans6" class="w-full md:w-64 border rounded-md px-3 py-2 focus:outline-none focus:ring focus:ring-blue-200">
+                                <button onclick="checkAnswer(6)" class="ml-2 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-200">Check</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Matching Activity -->
+                <div class="mb-10">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Matching Activity (Match the phrase with its meaning)</h3>
+                    <p class="text-gray-700 mb-4">Drag the meaning on the right to the correct phrase on the left.</p>
+
+                    <div id="matching-container" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div id="phrases-column" class="flex flex-col space-y-4">
+                            <!-- Phrases will be injected here -->
+                        </div>
+                        <div id="meanings-column" class="flex flex-col space-y-4">
+                            <!-- Meanings will be injected here -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Simulation Scenarios -->
+                <div class="mb-10">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Simulation Scenarios</h3>
+                    <p class="text-gray-700 mb-4">Practice using the expressions in realistic meeting contexts. Read the scenario and then use the provided phrases to form your response.</p>
+                    
+                    <!-- Scenario 1 -->
+                    <div class="p-6 bg-gray-50 rounded-lg border border-gray-200 mb-4">
+                        <h4 class="font-semibold text-lg mb-2 text-gray-900">Scenario 1: The New Project Proposal</h4>
+                        <p class="text-gray-700 mb-3">You are presenting a new project idea. You want to focus on easy wins first, explain that the idea is already in development, and then propose a detailed analysis to get more information.</p>
+                        <ul class="list-disc list-inside text-gray-600">
+                            <li><strong>To suggest focusing on easy wins:</strong> "We should start with the **low-hanging fruit** to build momentum quickly."</li>
+                            <li><strong>To state that the project is in development:</strong> "This project is currently **in the pipeline** and will be ready next quarter."</li>
+                            <li><strong>To propose a detailed analysis:</strong> "We need to schedule a **deep dive** to explore all the potential risks."</li>
+                        </ul>
+                    </div>
+
+                    <!-- Scenario 2 -->
+                    <div class="p-6 bg-gray-50 rounded-lg border border-gray-200 mb-4">
+                        <h4 class="font-semibold text-lg mb-2 text-gray-900">Scenario 2: The Team Strategy Meeting</h4>
+                        <p class="text-gray-700 mb-3">Your team is discussing a difficult issue. You want to propose using a new tool to make a process more efficient, and then you want to postpone the rest of the discussion until a later meeting.</p>
+                        <ul class="list-disc list-inside text-gray-600">
+                            <li><strong>To propose using a resource:</strong> "I think we can **leverage** the new software to **streamline** our workflow."</li>
+                            <li><strong>To suggest postponing a topic:</strong> "That's a complex topic. Let's **put a pin in it** and come back to it next week."</li>
+                            <li><strong>To inform a colleague you are aware of an issue:</strong> "I know there's a problem with the new system, it's definitely **on my radar**."</li>
+                        </ul>
+                    </div>
+
+                    <!-- Scenario 3 -->
+                    <div class="p-6 bg-gray-50 rounded-lg border border-gray-200">
+                        <h4 class="font-semibold text-lg mb-2 text-gray-900">Scenario 3: The Catch-Up with a Colleague</h4>
+                        <p class="text-gray-700 mb-3">You're talking with a colleague about the company's future. You want to talk about how a new technology has changed the industry and remind them that the company's main strength is its people.</p>
+                        <ul class="list-disc list-inside text-gray-600">
+                            <li><strong>To describe a major change:</strong> "The transition to remote work has created a **paradigm shift** in how we collaborate."</li>
+                            <li><strong>To describe a main strength:</strong> "Our ability to adapt quickly is our true **core competency**."</li>
+                            <li><strong>To ask for a quick contact:</strong> "Feel free to **ping me** if you have any updates on the project."</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        // --- Translation Exercise Logic ---
+        const translations = {
+            1: "We need to streamline this process.",
+            2: "Let's focus on the low-hanging fruit.",
+            3: "That's our core competency.",
+            4: "The project is in the pipeline.",
+            5: "The new strategy is getting traction.",
+            6: "Let's put a pin in that discussion."
+        };
+
+        function checkAnswer(questionNumber) {
+            const inputElement = document.getElementById(`ans${questionNumber}`);
+            const userAnswer = inputElement.value.trim().toLowerCase().replace(/['".,!?]/g, '');
+            const correctAnswer = translations[questionNumber].toLowerCase().replace(/['".,!?]/g, '');
+            
+            if (userAnswer === correctAnswer) {
+                inputElement.classList.add('correct');
+                inputElement.classList.remove('incorrect');
+                showMessage("Correct! ✅", true);
+            } else {
+                inputElement.classList.add('incorrect');
+                inputElement.classList.remove('correct');
+                showMessage(`Incorrect. The answer is: "${translations[questionNumber]}"`, false);
+            }
+        }
+
+        // --- Matching Activity Logic ---
+        const matchingData = [
+            { id: 'phrase1', text: 'To leverage', meaning: 'To use a resource to the best advantage' },
+            { id: 'phrase2', text: 'To streamline', meaning: 'To make a process more efficient' },
+            { id: 'phrase3', text: 'Low-hanging fruit', meaning: 'The easiest, most obvious tasks' },
+            { id: 'phrase4', text: 'A deep dive', meaning: 'A thorough and comprehensive analysis' },
+            { id: 'phrase5', text: 'Core competency', meaning: 'A fundamental skill or strength' },
+            { id: 'phrase6', text: 'A paradigm shift', meaning: 'A fundamental change in approach or thinking' },
+            { id: 'phrase7', text: 'To get traction', meaning: 'To gain momentum or widespread acceptance' },
+            { id: 'phrase8', text: 'To put a pin in it', meaning: 'To postpone a discussion for later' }
+        ];
+
+        const phrasesColumn = document.getElementById('phrases-column');
+        const meaningsColumn = document.getElementById('meanings-column');
+
+        const shuffledMeanings = [...matchingData].sort(() => Math.random() - 0.5);
+
+        matchingData.forEach(item => {
+            const phraseEl = document.createElement('div');
+            phraseEl.id = item.id;
+            phraseEl.className = 'phrase p-4 rounded-lg bg-gray-100 flex items-center justify-between shadow-sm';
+            phraseEl.innerHTML = `<span class="font-medium">${item.text}</span>`;
+            phrasesColumn.appendChild(phraseEl);
+        });
+
+        shuffledMeanings.forEach(item => {
+            const meaningEl = document.createElement('div');
+            meaningEl.id = item.id + '-meaning';
+            meaningEl.className = 'drag-item p-4 rounded-lg bg-gray-200 shadow-sm transition-transform duration-100 ease-in-out';
+            meaningEl.setAttribute('draggable', true);
+            meaningEl.textContent = item.meaning;
+            meaningsColumn.appendChild(meaningEl);
+        });
+
+        let draggedItem = null;
+        let messageTimeout;
+        const messageBox = document.getElementById('message-box');
+
+        function showMessage(text, isCorrect) {
+            clearTimeout(messageTimeout);
+            messageBox.textContent = text;
+            messageBox.style.display = 'block';
+            messageBox.className = isCorrect ? 'message-box correct' : 'message-box incorrect';
+            messageTimeout = setTimeout(() => {
+                messageBox.style.display = 'none';
+            }, 2000);
+        }
+
+        document.querySelectorAll('.drag-item').forEach(item => {
+            item.addEventListener('dragstart', (e) => {
+                draggedItem = e.target;
+                e.target.classList.add('dragging');
+            });
+            item.addEventListener('dragend', (e) => {
+                e.target.classList.remove('dragging');
+            });
+        });
+
+        document.querySelectorAll('.phrase').forEach(phrase => {
+            const dropTarget = document.createElement('div');
+            dropTarget.className = 'drop-target h-12 rounded-lg my-2';
+            phrase.parentNode.insertBefore(dropTarget, phrase.nextSibling);
+
+            dropTarget.addEventListener('dragover', (e) => {
+                e.preventDefault();
+                dropTarget.classList.add('hovered');
+            });
+            dropTarget.addEventListener('dragleave', (e) => {
+                dropTarget.classList.remove('hovered');
+            });
+            dropTarget.addEventListener('drop', (e) => {
+                e.preventDefault();
+                dropTarget.classList.remove('hovered');
+
+                if (draggedItem) {
+                    const phraseId = phrase.id;
+                    const meaningId = draggedItem.id.replace('-meaning', '');
+
+                    if (phraseId === meaningId) {
+                        // Correct match
+                        phrase.classList.add('correct');
+                        draggedItem.classList.add('correct');
+                        
+                        // Replace drop target with the dropped item
+                        const wrapper = document.createElement('div');
+                        wrapper.className = 'p-4 rounded-lg correct shadow-sm';
+                        wrapper.textContent = draggedItem.textContent;
+                        dropTarget.parentNode.replaceChild(wrapper, dropTarget);
+                        
+                        draggedItem.style.display = 'none';
+                        showMessage("Correct Match! ✅", true);
+                    } else {
+                        // Incorrect match
+                        phrase.classList.add('incorrect');
+                        draggedItem.classList.add('incorrect');
+                        showMessage("Incorrect Match. Try again!", false);
+                        
+                        setTimeout(() => {
+                            phrase.classList.remove('incorrect');
+                            draggedItem.classList.remove('incorrect');
+                        }, 1000);
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
